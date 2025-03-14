@@ -7,11 +7,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <h1 class="nav__logo">ADVENTURE</h1>
+        <ul class="nav__links">
+            <li class="nav__links--active active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>Contact</li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="nav__button">
+    </nav>
     <header>
-        <div class="header__content"></div>
-        <h2>Explore The Colourful World!</h2>
-        <div class="line"></div>
-        <h1>A WONDERFUL GIFT</h1>
+        <div class="header__content">
+            <h2>Explore The Colourful World!</h2>
+            <div class="header__line line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="" class="ctn">Learn More</a>
+        </div>
     </header>
+    <section class="events">
+        <div class="events__title title">
+            <h1>Upcoming Events</h1>
+            <div class="events__line line"></div>        
+        </div>
+        <div class="events__row row">
+            <div class="events__column column">
+                <img src="./img/img2.png" alt="" class="events__img">
+                <h4 class="events__column--title">Everest Camp Trek</h4>
+                <p class="events__column--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="events__column column">
+                <img src="./img/img1.png" alt="" class="events__img">
+                <h4 class="events__column--title">Walking Holidays</h4>
+                <p class="events__column--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="explore__content">
+            <h1 class="explore__content--title">EXPLORE THE WORLD</h1>
+            <div class="explore__line line"></div>
+            <p class="explore__content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore deleniti reprehenderit optio quaerat animi et quae magni dolore dolorum.</p>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <section class="tours">
+        <div class="tours__row row">
+            <div class="tours__column column">
+                <h1 class="tours__column--title">UPCOMING TOURS & DESTINATION</h4>
+                <div class="tours__line line"></div>
+                <p class="tours__column--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi porro est deserunt totam consectetur hic minima debitis cum quidem excepturi.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="image__column column">
+                <div class="image__gallery">
+                    <img src="./img/img3.png" alt="" class="image__gallery--img">
+                    <img src="./img/img4.png" alt="" class="image__gallery--img">
+                    <img src="./img/img5.png" alt="" class="image__gallery--img">
+                    <img src="./img/img6.png" alt="" class="image__gallery--img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p class="footer__text">123 New York Avenue 33 Street of The Nations Detroit Become Human 33/11</p>
+        <p class="footer__text footer__text--copyright">Copyright 2020 Outdoor Adventure</p>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.nav__button');
+        const navLinks = document.querySelector('.nav__links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile__menu');
+        });
+    </script>
 </body>
 </html>
